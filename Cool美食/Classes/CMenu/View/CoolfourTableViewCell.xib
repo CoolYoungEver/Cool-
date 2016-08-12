@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fourCell" rowHeight="180" id="KGk-i7-Jjw" customClass="CoolfourTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ReS-vq-VCJ">
+                        <rect key="frame" x="0.0" y="8" width="417" height="133"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8W-ab-kmd">
+                        <rect key="frame" x="16" y="150" width="385" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Y8W-ab-kmd" secondAttribute="bottom" id="6HE-3m-18k"/>
+                    <constraint firstItem="ReS-vq-VCJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Dhp-J0-ewO"/>
+                    <constraint firstItem="ReS-vq-VCJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="GDZ-OC-Gde"/>
+                    <constraint firstItem="Y8W-ab-kmd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="YdY-1u-nZh"/>
+                    <constraint firstItem="Y8W-ab-kmd" firstAttribute="top" secondItem="ReS-vq-VCJ" secondAttribute="bottom" constant="9" id="cCm-TJ-SLP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Y8W-ab-kmd" secondAttribute="trailing" constant="8" id="jgv-6F-nu6"/>
+                    <constraint firstAttribute="trailing" secondItem="ReS-vq-VCJ" secondAttribute="trailing" id="yw6-43-KFA"/>
+                    <constraint firstAttribute="bottom" secondItem="ReS-vq-VCJ" secondAttribute="bottom" id="zBe-Ps-IBb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="zBe-Ps-IBb"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageI" destination="ReS-vq-VCJ" id="1Fk-xW-fwk"/>
+                <outlet property="labText" destination="Y8W-ab-kmd" id="XoQ-Rc-MYf"/>
+            </connections>
+            <point key="canvasLocation" x="684.5" y="408"/>
+        </tableViewCell>
+    </objects>
+</document>
