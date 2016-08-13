@@ -183,6 +183,7 @@
     CoolSectionViewController *secondVC = [CoolSectionViewController new];
     CellItemsModel *model = self.arrTableCells[indexPath.row];
     secondVC.ID = model.strID;
+    secondVC.title = model.strTitle;
     [self.navigationController pushViewController:secondVC animated:YES];
 }
 

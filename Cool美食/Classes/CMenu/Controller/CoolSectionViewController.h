@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoolSectionViewController : UIViewController
+@interface CoolSectionViewController : UITableViewController
 
 @property (nonatomic, copy) NSString *ID;
+
 
 @end

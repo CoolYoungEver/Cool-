@@ -11,6 +11,7 @@
 #import "CoolMoreHealthMassage.h"
 #import "MoreHealthTableViewCell.h"
 #import "CoolMoreHViewController.h"
+#import "junpViewController.h"
 
 #define URLHealth @"http://mp.weixin.qq.com/mp/homepage?__biz=MzA4ODM3OTAyOQ==&hid=4&sn=d8805afd3ffe76ef59cae2d414ace335&uin=NzExODM1OTIx&key=8dcebf9e179c9f3a1afa8bc56d8a41e086615ed4e5712e8ddd9f60f15d9564c9181ad7e24081088f3d9845c3b2375c1e&devicetype=android-19&version=2603163b&lang=zh_CN&nettype=WIFI&pass_ticket=eGWykw09LTP%2BsCUG%2F5M%2FL%2BHK%2Fh75mhVzmeTibfjYzhcDCHqdCb4%2FfeH7r72aRyjy&begin=0&count=25&action=appmsg_list&f=json&r=0.17033187253400683"
 
@@ -55,11 +56,25 @@
     [self loadDefaultSetting];
 }
 
+
 - (void)loadDefaultSetting {
     self.title = @"健康资讯";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+    [btn setTitle:@"跳" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+    [btn addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void) jump {
+    junpViewController *jumpVC = [junpViewController new];
+    [self.navigationController pushViewController:jumpVC animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

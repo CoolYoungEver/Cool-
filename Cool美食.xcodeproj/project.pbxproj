@@ -87,6 +87,14 @@
 		CCDA4A7E1D582AAB008F8361 /* CoolMoreHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDA4A7D1D582AAB008F8361 /* CoolMoreHViewController.m */; };
 		CCE1AC4E1D5192B500FD706E /* CoolMenuSecTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE1AC4C1D5192B500FD706E /* CoolMenuSecTableViewCell.m */; };
 		CCE1AC4F1D5192B500FD706E /* CoolMenuSecTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE1AC4D1D5192B500FD706E /* CoolMenuSecTableViewCell.xib */; };
+		CCF87F4F1D5EAAF500A9D788 /* YSMenuDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F4E1D5EAAF500A9D788 /* YSMenuDataModel.m */; };
+		CCF87F521D5EAC4500A9D788 /* YSMenuStepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F511D5EAC4500A9D788 /* YSMenuStepModel.m */; };
+		CCF87F551D5EB02B00A9D788 /* YSMenuMaterialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F541D5EB02B00A9D788 /* YSMenuMaterialModel.m */; };
+		CCF87F5B1D5EB27800A9D788 /* PageOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F591D5EB27800A9D788 /* PageOneTableViewCell.m */; };
+		CCF87F5C1D5EB27800A9D788 /* PageOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF87F5A1D5EB27800A9D788 /* PageOneTableViewCell.xib */; };
+		CCF87F601D5EC82900A9D788 /* SectioniiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F5E1D5EC82900A9D788 /* SectioniiTableViewCell.m */; };
+		CCF87F611D5EC82900A9D788 /* SectioniiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF87F5F1D5EC82900A9D788 /* SectioniiTableViewCell.xib */; };
+		CCF87F641D5F14AD00A9D788 /* junpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F631D5F14AD00A9D788 /* junpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -242,6 +250,20 @@
 		CCE1AC4B1D5192B500FD706E /* CoolMenuSecTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolMenuSecTableViewCell.h; sourceTree = "<group>"; };
 		CCE1AC4C1D5192B500FD706E /* CoolMenuSecTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolMenuSecTableViewCell.m; sourceTree = "<group>"; };
 		CCE1AC4D1D5192B500FD706E /* CoolMenuSecTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoolMenuSecTableViewCell.xib; sourceTree = "<group>"; };
+		CCF87F4D1D5EAAF500A9D788 /* YSMenuDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMenuDataModel.h; sourceTree = "<group>"; };
+		CCF87F4E1D5EAAF500A9D788 /* YSMenuDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMenuDataModel.m; sourceTree = "<group>"; };
+		CCF87F501D5EAC4500A9D788 /* YSMenuStepModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMenuStepModel.h; sourceTree = "<group>"; };
+		CCF87F511D5EAC4500A9D788 /* YSMenuStepModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMenuStepModel.m; sourceTree = "<group>"; };
+		CCF87F531D5EB02B00A9D788 /* YSMenuMaterialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMenuMaterialModel.h; sourceTree = "<group>"; };
+		CCF87F541D5EB02B00A9D788 /* YSMenuMaterialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMenuMaterialModel.m; sourceTree = "<group>"; };
+		CCF87F581D5EB27800A9D788 /* PageOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageOneTableViewCell.h; sourceTree = "<group>"; };
+		CCF87F591D5EB27800A9D788 /* PageOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageOneTableViewCell.m; sourceTree = "<group>"; };
+		CCF87F5A1D5EB27800A9D788 /* PageOneTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageOneTableViewCell.xib; sourceTree = "<group>"; };
+		CCF87F5D1D5EC82900A9D788 /* SectioniiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectioniiTableViewCell.h; sourceTree = "<group>"; };
+		CCF87F5E1D5EC82900A9D788 /* SectioniiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectioniiTableViewCell.m; sourceTree = "<group>"; };
+		CCF87F5F1D5EC82900A9D788 /* SectioniiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectioniiTableViewCell.xib; sourceTree = "<group>"; };
+		CCF87F621D5F14AD00A9D788 /* junpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = junpViewController.h; sourceTree = "<group>"; };
+		CCF87F631D5F14AD00A9D788 /* junpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = junpViewController.m; sourceTree = "<group>"; };
 		CEF72A756C62A788CD199F56 /* libPods-Cool美食.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cool美食.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -554,6 +576,12 @@
 		CCD6BF501D4F3B3500BD2E5C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCF87F4D1D5EAAF500A9D788 /* YSMenuDataModel.h */,
+				CCF87F4E1D5EAAF500A9D788 /* YSMenuDataModel.m */,
+				CCF87F501D5EAC4500A9D788 /* YSMenuStepModel.h */,
+				CCF87F511D5EAC4500A9D788 /* YSMenuStepModel.m */,
+				CCF87F531D5EB02B00A9D788 /* YSMenuMaterialModel.h */,
+				CCF87F541D5EB02B00A9D788 /* YSMenuMaterialModel.m */,
 				CCBE93DD1D56133A006E484A /* endModelBase */,
 				CC94ADDA1D532B9F00435DA6 /* MenuTwo */,
 				CC2B21E11D51EE070049FD54 /* TopHeaderNodel */,
@@ -565,6 +593,7 @@
 		CCD6BF511D4F3B3500BD2E5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CCF87F571D5EB1CE00A9D788 /* sectionPage */,
 				CC8B78391D547659006B2D5D /* CoolHeadCollcetionCell */,
 				CC2B21F21D520DB90049FD54 /* firstPage */,
 			);
@@ -588,6 +617,8 @@
 				CCD6BF661D4F3CBC00BD2E5C /* CoolMineViewController.m */,
 				CCDA4A7C1D582AAB008F8361 /* CoolMoreHViewController.h */,
 				CCDA4A7D1D582AAB008F8361 /* CoolMoreHViewController.m */,
+				CCF87F621D5F14AD00A9D788 /* junpViewController.h */,
+				CCF87F631D5F14AD00A9D788 /* junpViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -705,6 +736,19 @@
 			name = GuidImage;
 			sourceTree = "<group>";
 		};
+		CCF87F571D5EB1CE00A9D788 /* sectionPage */ = {
+			isa = PBXGroup;
+			children = (
+				CCF87F581D5EB27800A9D788 /* PageOneTableViewCell.h */,
+				CCF87F591D5EB27800A9D788 /* PageOneTableViewCell.m */,
+				CCF87F5A1D5EB27800A9D788 /* PageOneTableViewCell.xib */,
+				CCF87F5D1D5EC82900A9D788 /* SectioniiTableViewCell.h */,
+				CCF87F5E1D5EC82900A9D788 /* SectioniiTableViewCell.m */,
+				CCF87F5F1D5EC82900A9D788 /* SectioniiTableViewCell.xib */,
+			);
+			path = sectionPage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -766,6 +810,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF87F611D5EC82900A9D788 /* SectioniiTableViewCell.xib in Resources */,
 				CCD6BFFC1D4F46A200BD2E5C /* guid_3.png in Resources */,
 				CCD6BFFE1D4F471C00BD2E5C /* Images.xcassets in Resources */,
 				CCDA4A7B1D582752008F8361 /* MoreHealthTableViewCell.xib in Resources */,
@@ -777,6 +822,7 @@
 				CC8B78431D54A8DE006B2D5D /* CoolMenHeadTableViewCell.xib in Resources */,
 				CC2B22041D5232250049FD54 /* LoadXib.xib in Resources */,
 				CCBE93DC1D55CEAD006E484A /* CoolFitNessTableViewCell.xib in Resources */,
+				CCF87F5C1D5EB27800A9D788 /* PageOneTableViewCell.xib in Resources */,
 				CCD6BF361D4F39B900BD2E5C /* LaunchScreen.storyboard in Resources */,
 				CCD6BF311D4F39B900BD2E5C /* Main.storyboard in Resources */,
 				CCD6C05B1D4F537D00BD2E5C /* CoolMenuTableViewCell.xib in Resources */,
@@ -840,6 +886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD6BFB61D4F408C00BD2E5C /* SDWebImageDownloader.m in Sources */,
+				CCF87F551D5EB02B00A9D788 /* YSMenuMaterialModel.m in Sources */,
 				CCBE93E91D56D85C006E484A /* CoolWebViewController.m in Sources */,
 				CC2B21EA1D51F2D40049FD54 /* CoolMenuTopArray.m in Sources */,
 				CCD6BFAE1D4F408C00BD2E5C /* MASViewConstraint.m in Sources */,
@@ -857,6 +904,8 @@
 				CCD6BFBC1D4F408C00BD2E5C /* UIImage+MultiFormat.m in Sources */,
 				CCD6BFBD1D4F408C00BD2E5C /* UIImage+WebP.m in Sources */,
 				CCD6BF6A1D4F406F00BD2E5C /* CoolGuidViewController.m in Sources */,
+				CCF87F641D5F14AD00A9D788 /* junpViewController.m in Sources */,
+				CCF87F5B1D5EB27800A9D788 /* PageOneTableViewCell.m in Sources */,
 				CCD6BF5E1D4F3C7F00BD2E5C /* CoolMenuViewController.m in Sources */,
 				CCBE93DB1D55CEAD006E484A /* CoolFitNessTableViewCell.m in Sources */,
 				CCD6BFC21D4F408C00BD2E5C /* ViewController+MASAdditions.m in Sources */,
@@ -869,6 +918,7 @@
 				CCDA4A7E1D582AAB008F8361 /* CoolMoreHViewController.m in Sources */,
 				CC8B78271D542CA6006B2D5D /* CoolHealthScrollView.m in Sources */,
 				CC94ADE31D53600900435DA6 /* CoolMenuDishes.m in Sources */,
+				CCF87F601D5EC82900A9D788 /* SectioniiTableViewCell.m in Sources */,
 				CCD6BF641D4F3CAE00BD2E5C /* CoolGroundViewController.m in Sources */,
 				CCD6BF5B1D4F3C5000BD2E5C /* CoolnavigationViewController.m in Sources */,
 				CC94ADE01D532D6600435DA6 /* TwoAuthor.m in Sources */,
@@ -886,6 +936,8 @@
 				CC8B78381D54721A006B2D5D /* CoolSecHeadModel.m in Sources */,
 				CCBE93EC1D56DCDC006E484A /* CoolHealthWebViewController.m in Sources */,
 				CCD6BFB71D4F408C00BD2E5C /* SDWebImageDownloaderOperation.m in Sources */,
+				CCF87F4F1D5EAAF500A9D788 /* YSMenuDataModel.m in Sources */,
+				CCF87F521D5EAC4500A9D788 /* YSMenuStepModel.m in Sources */,
 				CCDA4A7A1D582752008F8361 /* MoreHealthTableViewCell.m in Sources */,
 				CC94ADDD1D532BCB00435DA6 /* MenuTwoBase.m in Sources */,
 				CCD6BF561D4F3B3500BD2E5C /* AppDelegate.m in Sources */,
@@ -1020,7 +1072,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cool美食/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qingyun.Cool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1037,7 +1089,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cool美食/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qingyun.Cool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

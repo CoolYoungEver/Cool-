@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoolZaoCanViewController : UIViewController
+@interface CoolZaoCanViewController : UITableViewController
 
 @property (nonatomic, copy) NSString *ID;
 @property (nonatomic, weak) UILabel *labTitle;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoolHealthWebViewController : UIViewController
+@interface CoolHealthWebViewController : UITableViewController
 
 @property (nonatomic, copy) NSString *ID;
 
