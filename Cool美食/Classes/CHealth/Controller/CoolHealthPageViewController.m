@@ -96,7 +96,7 @@ static NSInteger page = 1;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error) {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请点击重试！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请下拉刷新重试！" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
             [alert addAction:action];
             [self presentViewController:alert animated:YES completion:nil];
@@ -113,48 +113,45 @@ static NSInteger page = 1;
 - (void)loadDefaultSetting {
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.contentInset = UIEdgeInsetsMake(42, 0, 49, 0);
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return self.arrDatas.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return self.arrDatas.count;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CoolMenHeadTableViewCell *cell = [CoolMenHeadTableViewCell initWithDictionary:tableView];
-    CoolSecHeadModel *model = self.arrDatas[indexPath.row];
+    CoolSecHeadModel *model = self.arrDatas[indexPath.section];
     cell.model = model;
     cell.selectionStyle = UITableViewCellStyleDefault;
     return cell;
 }
 
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CoolHealthWebViewController *healthWebVC = [CoolHealthWebViewController new];
-    CoolSecHeadModel *model = self.arrDatas[indexPath.row];
+    CoolSecHeadModel *model = self.arrDatas[indexPath.section];
     healthWebVC.ID = model.strZaoMenuId;
     [self.navigationController pushViewController:healthWebVC animated:YES];
-    
 }
-
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 150;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 42;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 42;
+    if (section == 0) {
+        return 0;
+    }
+    return 5;
 }
 
 - (void)reloadMore {
@@ -225,18 +222,25 @@ static NSInteger page = 1;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error) {
-            NSLog(@"%@",error);
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请刷新重试！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
         }
     }];
-    
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     
     if (scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height && scrollView.contentOffset.y > 0) {
+        UILabel *labFoot = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
+        labFoot.textAlignment = NSTextAlignmentCenter;
+        labFoot.text = @"上拉加载更多";
+        self.tableView.tableFooterView = labFoot;
         [self reloadMore];
+        
     }else if (scrollView.contentOffset.y < 0) {
-        [self loadDatas];
+        [self reloadMore];
     }
 }
 

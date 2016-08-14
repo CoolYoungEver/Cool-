@@ -32,11 +32,11 @@
     CoolHealthViewController *health = [[CoolHealthViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     [self setViewWithViewController:health imageName:@"health" withTitle:@"养生食谱"];
     
+    CoolMineViewController *mineVC = [[CoolMineViewController alloc] init];
+    [self setViewWithViewController:mineVC imageName:@"tabbar_discover_selected" withTitle:@"摇一摇"];
+    
     CoolGroundViewController *groundVC = [[CoolGroundViewController alloc] init];
     [self setViewWithViewController:groundVC imageName:@"CoolGround" withTitle:@"健身饮食"];
-    
-    CoolMineViewController *mineVC = [[CoolMineViewController alloc] init];
-    [self setViewWithViewController:mineVC imageName:@"CoolDian" withTitle:@"更多"];
     
     self.tabBar.tintColor = [UIColor orangeColor];
     

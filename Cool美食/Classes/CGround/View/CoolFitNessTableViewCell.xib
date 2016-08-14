@@ -36,21 +36,13 @@
                     <constraint firstItem="OsF-gb-L8U" firstAttribute="leading" secondItem="DsA-S6-WLJ" secondAttribute="trailing" constant="22" id="1O7-aN-XuS"/>
                     <constraint firstItem="IsM-gG-cYk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="6Xr-gL-heC"/>
                     <constraint firstItem="IsM-gG-cYk" firstAttribute="leading" secondItem="DsA-S6-WLJ" secondAttribute="trailing" constant="22" id="7IL-P0-Fqf"/>
-                    <constraint firstItem="DsA-S6-WLJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="BEu-W7-WRc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="OsF-gb-L8U" secondAttribute="trailing" constant="30" id="MLx-wv-3aq"/>
-                    <constraint firstItem="DsA-S6-WLJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Ugx-eI-rS1"/>
                     <constraint firstItem="OsF-gb-L8U" firstAttribute="top" secondItem="IsM-gG-cYk" secondAttribute="bottom" constant="10" id="WdS-Fb-wja"/>
                     <constraint firstAttribute="bottom" secondItem="DsA-S6-WLJ" secondAttribute="bottom" constant="8" id="ipE-C2-5GV"/>
                     <constraint firstItem="DsA-S6-WLJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="pLo-6s-H0a"/>
                     <constraint firstItem="DsA-S6-WLJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="wJF-7J-As1"/>
                     <constraint firstItem="IsM-gG-cYk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="118" id="wVK-K6-Ce0"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="BEu-W7-WRc"/>
-                        <exclude reference="Ugx-eI-rS1"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imagePag" destination="DsA-S6-WLJ" id="dst-94-NCG"/>

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoolMineViewController : UITableViewController
+@interface CoolMineViewController : UIViewController
 
 @end

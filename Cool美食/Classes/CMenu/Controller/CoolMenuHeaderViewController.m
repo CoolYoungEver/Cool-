@@ -66,7 +66,7 @@ static NSInteger page = 1;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error) {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请点击重试！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请下拉刷新重试！" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
             [alert addAction:action];
             [self presentViewController:alert animated:YES completion:nil];
@@ -86,13 +86,17 @@ static NSInteger page = 1;
     self.tableView.dataSource = self;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.arrDatas.count;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CoolMenHeadTableViewCell *cell = [CoolMenHeadTableViewCell initWithDictionary:tableView];
-    CoolSecHeadModel *model = self.arrDatas[indexPath.row];
+    CoolSecHeadModel *model = self.arrDatas[indexPath.section];
     cell.model = model;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
@@ -105,7 +109,7 @@ static NSInteger page = 1;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     CoolZaoCanViewController *zaoCanVC = [CoolZaoCanViewController new];
-    CoolSecHeadModel *model = self.arrDatas[indexPath.row];
+    CoolSecHeadModel *model = self.arrDatas[indexPath.section];
     zaoCanVC.ID = model.strZaoMenuId;
     [self.navigationController pushViewController:zaoCanVC animated:YES];
 }
@@ -152,7 +156,7 @@ static NSInteger page = 1;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error) {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请点击重试！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请刷新重试！" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
             [alert addAction:action];
             [self presentViewController:alert animated:YES completion:nil];
@@ -161,12 +165,16 @@ static NSInteger page = 1;
 
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 5;
+}
+
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     
     if (scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height && scrollView.contentOffset.y > 0) {
         [self reloadMore];
     }else if (scrollView.contentOffset.y < 0) {
-        [self loadDatas];
+        [self reloadMore];
     }
 }
 

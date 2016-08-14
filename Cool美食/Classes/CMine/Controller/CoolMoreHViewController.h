@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoolMoreHViewController : UIViewController
+@interface CoolMoreHViewController : UITableViewController
 
-@property (nonatomic, copy) NSString *strURL;
+@property (nonatomic, copy) NSString *strId;
 
 @end

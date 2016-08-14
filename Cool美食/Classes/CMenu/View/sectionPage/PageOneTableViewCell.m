@@ -22,7 +22,7 @@
 
 - (void)setModel:(YSMenuStepModel *)model {
     _model = model;
-    _labtitle.text = model.stepState;
+//    _labtitle.text = model.stepState;
     NSURL *url = [NSURL URLWithString:model.stepPic];
     [_image sd_setImageWithURL:url];
 }

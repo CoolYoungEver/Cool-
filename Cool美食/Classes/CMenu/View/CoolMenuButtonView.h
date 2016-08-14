@@ -1,5 +1,5 @@
 //
-//  junpViewController.h
+//  CoolMenuButtonView.h
 //  Cool美食
 //
 //  Created by qingyun on 16/8/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface junpViewController : UIViewController
+@interface CoolMenuButtonView : UIView
 
 @end

@@ -26,6 +26,7 @@
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-7P-2gn">
                         <rect key="frame" x="8" y="88" width="50" height="50"/>
+                        <color key="backgroundColor" red="1" green="0.82751405280000001" blue="0.2383670621" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="3Zg-LR-6MO"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="5tC-9J-tMm"/>
@@ -40,6 +41,7 @@
                         </variation>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.82751405280000001" blue="0.2383670621" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="QCw-yC-fgF" secondAttribute="trailing" constant="30" id="2Sr-lm-wZT"/>
                     <constraint firstItem="QCw-yC-fgF" firstAttribute="top" secondItem="PbU-Bd-Aae" secondAttribute="bottom" constant="16" id="4vb-Pc-FK5"/>

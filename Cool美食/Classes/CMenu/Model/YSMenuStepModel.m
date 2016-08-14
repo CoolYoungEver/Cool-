@@ -12,8 +12,11 @@
 
 + (instancetype)menuStepModelWithDictionary:(NSDictionary *)dicData{
     YSMenuStepModel *stepModel = [YSMenuStepModel new];
+    NSString *strStep = dicData[@"stepState"];
+    NSArray *array = [strStep componentsSeparatedByString:@"\r\n\r\n"];
+    NSString *str = [array componentsJoinedByString:@"\r\n"];
     stepModel.stepPic = dicData[@"stepPic"];
-    stepModel.stepState = dicData[@"stepState"];
+    stepModel.stepState = str;
     return stepModel;
 }
 

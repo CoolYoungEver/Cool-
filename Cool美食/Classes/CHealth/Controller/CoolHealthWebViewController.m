@@ -58,6 +58,7 @@
             weakSelf.arrMaterail = model.menuMaterial;
             weakSelf.arrSteps = model.menuStep;
             [weakSelf.tableView reloadData];
+
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         __weak typeof(self) weakSelf = self;
@@ -65,7 +66,7 @@
         UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"返回" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
             [weakSelf.navigationController popViewControllerAnimated:YES];
         }];
-        UIAlertAction *alertDengLuAction = [UIAlertAction actionWithTitle:@"刷新试试" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *alertDengLuAction = [UIAlertAction actionWithTitle:@"下拉刷新试试" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [weakSelf requestInformation];
         }];
         [alertContorller addAction:alertDengLuAction];
@@ -122,6 +123,7 @@
         YSMenuMaterialModel *materialModel = self.arrMaterail[indexPath.row];
         cell.textLabel.textAlignment = NSTextAlignmentLeft;
         cell.textLabel.text = [NSString stringWithFormat:@"%@",materialModel.materialName];
+       
         cell.detailTextLabel.text = materialModel.materialWeight;
         return cell;
     }
@@ -129,7 +131,7 @@
         PageOneTableViewCell *cell = [PageOneTableViewCell initWithTableView:tableView];
         YSMenuStepModel *model = self.arrSteps[indexPath.row];
         cell.model = model;
-        cell.index = indexPath.row;
+        cell.labtitle.text = [NSString stringWithFormat:@"%ld、%@",indexPath.row + 1,model.stepState];
         return cell;
         
     }
@@ -165,6 +167,14 @@
         return @"步骤";
     }
     return 0;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if ([scrollView isEqual:self.tableView]) {
+        if (self.tableView.contentOffset.y < 0) {
+            [self requestInformation];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {

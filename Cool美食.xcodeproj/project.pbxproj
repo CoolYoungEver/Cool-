@@ -37,6 +37,9 @@
 		CCBE93E91D56D85C006E484A /* CoolWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBE93E81D56D85C006E484A /* CoolWebViewController.m */; };
 		CCBE93EC1D56DCDC006E484A /* CoolHealthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBE93EB1D56DCDC006E484A /* CoolHealthWebViewController.m */; };
 		CCBE93EF1D56EC02006E484A /* CoolZaoCanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBE93EE1D56EC02006E484A /* CoolZaoCanViewController.m */; };
+		CCCA07A81D5FFE9400569E5A /* yaoyiyao.png in Resources */ = {isa = PBXBuildFile; fileRef = CCCA07A71D5FFE9400569E5A /* yaoyiyao.png */; };
+		CCCA07AB1D5FFF7100569E5A /* CoolYaoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCA07AA1D5FFF7100569E5A /* CoolYaoTableViewController.m */; };
+		CCCA07AD1D6004CF00569E5A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCA07AC1D6004CF00569E5A /* AudioToolbox.framework */; };
 		CCD6BF281D4F39B900BD2E5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD6BF271D4F39B900BD2E5C /* main.m */; };
 		CCD6BF311D4F39B900BD2E5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD6BF2F1D4F39B900BD2E5C /* Main.storyboard */; };
 		CCD6BF361D4F39B900BD2E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD6BF341D4F39B900BD2E5C /* LaunchScreen.storyboard */; };
@@ -94,7 +97,7 @@
 		CCF87F5C1D5EB27800A9D788 /* PageOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF87F5A1D5EB27800A9D788 /* PageOneTableViewCell.xib */; };
 		CCF87F601D5EC82900A9D788 /* SectioniiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F5E1D5EC82900A9D788 /* SectioniiTableViewCell.m */; };
 		CCF87F611D5EC82900A9D788 /* SectioniiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF87F5F1D5EC82900A9D788 /* SectioniiTableViewCell.xib */; };
-		CCF87F641D5F14AD00A9D788 /* junpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F631D5F14AD00A9D788 /* junpViewController.m */; };
+		CCF87F671D5F2E8500A9D788 /* CoolMenuButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF87F661D5F2E8500A9D788 /* CoolMenuButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +156,10 @@
 		CCBE93EB1D56DCDC006E484A /* CoolHealthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolHealthWebViewController.m; sourceTree = "<group>"; };
 		CCBE93ED1D56EC02006E484A /* CoolZaoCanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolZaoCanViewController.h; sourceTree = "<group>"; };
 		CCBE93EE1D56EC02006E484A /* CoolZaoCanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolZaoCanViewController.m; sourceTree = "<group>"; };
+		CCCA07A71D5FFE9400569E5A /* yaoyiyao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yaoyiyao.png; sourceTree = "<group>"; };
+		CCCA07A91D5FFF7100569E5A /* CoolYaoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolYaoTableViewController.h; sourceTree = "<group>"; };
+		CCCA07AA1D5FFF7100569E5A /* CoolYaoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolYaoTableViewController.m; sourceTree = "<group>"; };
+		CCCA07AC1D6004CF00569E5A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CCD6BF231D4F39B900BD2E5C /* Cool美食.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cool美食.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD6BF271D4F39B900BD2E5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCD6BF301D4F39B900BD2E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -262,8 +269,8 @@
 		CCF87F5D1D5EC82900A9D788 /* SectioniiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectioniiTableViewCell.h; sourceTree = "<group>"; };
 		CCF87F5E1D5EC82900A9D788 /* SectioniiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectioniiTableViewCell.m; sourceTree = "<group>"; };
 		CCF87F5F1D5EC82900A9D788 /* SectioniiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectioniiTableViewCell.xib; sourceTree = "<group>"; };
-		CCF87F621D5F14AD00A9D788 /* junpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = junpViewController.h; sourceTree = "<group>"; };
-		CCF87F631D5F14AD00A9D788 /* junpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = junpViewController.m; sourceTree = "<group>"; };
+		CCF87F651D5F2E8500A9D788 /* CoolMenuButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolMenuButtonView.h; sourceTree = "<group>"; };
+		CCF87F661D5F2E8500A9D788 /* CoolMenuButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolMenuButtonView.m; sourceTree = "<group>"; };
 		CEF72A756C62A788CD199F56 /* libPods-Cool美食.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cool美食.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -272,6 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCA07AD1D6004CF00569E5A /* AudioToolbox.framework in Frameworks */,
 				9208791C754A459623B35158 /* libPods-Cool美食.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +299,7 @@
 		7E6C2F8727C4DB81A6406739 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCCA07AC1D6004CF00569E5A /* AudioToolbox.framework */,
 				CEF72A756C62A788CD199F56 /* libPods-Cool美食.a */,
 			);
 			name = Frameworks;
@@ -325,6 +334,8 @@
 			children = (
 				CC2B21DB1D51E6AB0049FD54 /* CoolMenuHeaderView.h */,
 				CC2B21DC1D51E6AB0049FD54 /* CoolMenuHeaderView.m */,
+				CCF87F651D5F2E8500A9D788 /* CoolMenuButtonView.h */,
+				CCF87F661D5F2E8500A9D788 /* CoolMenuButtonView.m */,
 				CC2B22001D522DA60049FD54 /* LoadXib.h */,
 				CC2B22011D522DA60049FD54 /* LoadXib.m */,
 				CC2B22031D5232250049FD54 /* LoadXib.xib */,
@@ -615,10 +626,10 @@
 			children = (
 				CCD6BF651D4F3CBC00BD2E5C /* CoolMineViewController.h */,
 				CCD6BF661D4F3CBC00BD2E5C /* CoolMineViewController.m */,
+				CCCA07A91D5FFF7100569E5A /* CoolYaoTableViewController.h */,
+				CCCA07AA1D5FFF7100569E5A /* CoolYaoTableViewController.m */,
 				CCDA4A7C1D582AAB008F8361 /* CoolMoreHViewController.h */,
 				CCDA4A7D1D582AAB008F8361 /* CoolMoreHViewController.m */,
-				CCF87F621D5F14AD00A9D788 /* junpViewController.h */,
-				CCF87F631D5F14AD00A9D788 /* junpViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -645,6 +656,7 @@
 		CCD6BF581D4F3B4400BD2E5C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				CCCA07A71D5FFE9400569E5A /* yaoyiyao.png */,
 				CCD6BFF61D4F466D00BD2E5C /* GuidImage */,
 				CCD6BF6B1D4F408C00BD2E5C /* Masonry */,
 			);
@@ -819,6 +831,7 @@
 				CCD6BFFB1D4F46A200BD2E5C /* guid_2.png in Resources */,
 				CC2B21D21D51C9BD0049FD54 /* CoolMenuThirdTableViewCell.xib in Resources */,
 				CCD6BFA81D4F408C00BD2E5C /* Info.plist in Resources */,
+				CCCA07A81D5FFE9400569E5A /* yaoyiyao.png in Resources */,
 				CC8B78431D54A8DE006B2D5D /* CoolMenHeadTableViewCell.xib in Resources */,
 				CC2B22041D5232250049FD54 /* LoadXib.xib in Resources */,
 				CCBE93DC1D55CEAD006E484A /* CoolFitNessTableViewCell.xib in Resources */,
@@ -889,6 +902,7 @@
 				CCF87F551D5EB02B00A9D788 /* YSMenuMaterialModel.m in Sources */,
 				CCBE93E91D56D85C006E484A /* CoolWebViewController.m in Sources */,
 				CC2B21EA1D51F2D40049FD54 /* CoolMenuTopArray.m in Sources */,
+				CCF87F671D5F2E8500A9D788 /* CoolMenuButtonView.m in Sources */,
 				CCD6BFAE1D4F408C00BD2E5C /* MASViewConstraint.m in Sources */,
 				CC2B21DD1D51E6AB0049FD54 /* CoolMenuHeaderView.m in Sources */,
 				CCD6BF671D4F3CBC00BD2E5C /* CoolMineViewController.m in Sources */,
@@ -904,10 +918,10 @@
 				CCD6BFBC1D4F408C00BD2E5C /* UIImage+MultiFormat.m in Sources */,
 				CCD6BFBD1D4F408C00BD2E5C /* UIImage+WebP.m in Sources */,
 				CCD6BF6A1D4F406F00BD2E5C /* CoolGuidViewController.m in Sources */,
-				CCF87F641D5F14AD00A9D788 /* junpViewController.m in Sources */,
 				CCF87F5B1D5EB27800A9D788 /* PageOneTableViewCell.m in Sources */,
 				CCD6BF5E1D4F3C7F00BD2E5C /* CoolMenuViewController.m in Sources */,
 				CCBE93DB1D55CEAD006E484A /* CoolFitNessTableViewCell.m in Sources */,
+				CCCA07AB1D5FFF7100569E5A /* CoolYaoTableViewController.m in Sources */,
 				CCD6BFC21D4F408C00BD2E5C /* ViewController+MASAdditions.m in Sources */,
 				CCD6BFBF1D4F408C00BD2E5C /* UIImageView+WebCache.m in Sources */,
 				CCD6BFA91D4F408C00BD2E5C /* MASCompositeConstraint.m in Sources */,
@@ -1072,7 +1086,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cool美食/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qingyun.Cool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1089,7 +1103,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Cool美食/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qingyun.Cool;
 				PRODUCT_NAME = "$(TARGET_NAME)";

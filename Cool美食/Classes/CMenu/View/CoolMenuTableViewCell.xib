@@ -48,6 +48,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.82751405280000001" blue="0.2383670621" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstAttribute="leadingMargin" secondItem="1rO-My-Pwc" secondAttribute="leading" id="26t-iy-kLq"/>
                     <constraint firstItem="mK5-wz-1iu" firstAttribute="top" secondItem="tyi-Gq-3RG" secondAttribute="bottom" constant="19" id="70H-yb-NhN"/>

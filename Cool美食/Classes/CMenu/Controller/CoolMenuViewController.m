@@ -20,19 +20,18 @@
 #import "CoolMenuHeaderViewController.h"
 #import "CoolSearchViewController.h"
 
-
-
 #define URLTC @"http://115.231.110.203/appapi/homePage.asp"
 #define URLSCR @"http://api.xiachufang.com/v2/init_page_v5.json?origin=android&api_sign=c3d6e7c5f932b0a8a6f4b816c6488f2d&timezone=Asia%2FShanghai&nonce=9A2503CA-0F6E-48D6-9EE1-F46785F82B3B&api_key=09844205d1de8adc26110817477a2b70&_ts=1470214425&version=178&"
 
 @interface CoolMenuViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, copy) NSArray *arrTableCells;
+@property (nonatomic, strong) NSMutableArray *arrTableCells;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, copy) NSArray *arrScroll;
 @property (nonatomic, strong) CoolMenuHeaderView *menuHeader;
 @property (nonatomic, weak) UIView *viewD;
 @property (nonatomic, weak) UIView *viewC;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -86,7 +85,7 @@
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error) {
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请点击重试！" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络连接失败，请下拉刷新重试！" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
             [alert addAction:action];
             [self presentViewController:alert animated:YES completion:nil];
@@ -103,7 +102,7 @@
         tableView.backgroundColor = [UIColor whiteColor];
         _tableView = tableView;
         
-        CoolMenuHeaderView *menuHeader = [[CoolMenuHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 90)];
+        CoolMenuHeaderView *menuHeader = [[CoolMenuHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 100)];
         self.menuHeader = menuHeader;
         [menuHeader setBlaTag:^(NSInteger indexTag) {
             CoolMenuHeaderViewController *headerVC = [CoolMenuHeaderViewController new];
@@ -122,8 +121,9 @@
     [self loadDatas];
     [self tableView];
     [self loadDataFromServer];
-    
 }
+
+
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -161,7 +161,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 220;
+    return 240;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {

@@ -9,7 +9,7 @@
 #import "CoolMenuHeaderView.h"
 #import "Masonry.h"
 #import "LoadXib.h"
-
+#import "CoolMenuButtonView.h"
 #import "UIImageView+WebCache.h"
 
 @implementation CoolMenuHeaderView
@@ -35,10 +35,17 @@
     [self addSubview:topScroll];
     [topScroll mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.trailing.leading.mas_equalTo(self);
-        make.height.mas_equalTo(90);
+        make.height.mas_equalTo(120);
     }];
   
     [self updateScrollView:_arrData];
+//    CoolMenuButtonView *btnView = [CoolMenuButtonView new];
+//    [self addSubview:btnView];
+//    [btnView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.mas_equalTo(topScroll.mas_bottom).offset(8);
+//        make.leading.trailing.mas_equalTo(self);
+//        make.height.mas_equalTo(80);
+//    }];
 }
 //刷新滑动视图
 -(void) updateScrollView:(NSArray *) arrModel{
@@ -49,9 +56,9 @@
     CGFloat topScWidth = self.frame.size.width;
     NSInteger count = arrModel.count;
     for (NSInteger index = 0; index < count; index ++) {
-        LoadXib *topView = [LoadXib loadXib:CGRectMake(index * topScWidth, 0, topScWidth, 90)];
+        LoadXib *topView = [LoadXib loadXib:CGRectMake(index * topScWidth, 0, topScWidth, 100)];
         UIButton *btu = [UIButton buttonWithType:UIButtonTypeCustom];
-        btu.frame = CGRectMake(index * topScWidth, 0, topScWidth, 90);
+        btu.frame = CGRectMake(index * topScWidth, 0, topScWidth, 100);
         topView.model = arrModel[index];
         btu.tag = index + 1;
         [topScroll addSubview:topView];
